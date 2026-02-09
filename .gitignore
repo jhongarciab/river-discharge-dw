@@ -1,24 +1,36 @@
-# Ignore system-specific files
+# ===========================
+# Archivos del sistema
+# ===========================
 .DS_Store
 Thumbs.db
 
-# Ignore local configuration files
+# ===========================
+# Configuracion local
+# ===========================
 *.env
 
-# Ignore SQL Server-related files
-*.mdf
-*.ldf
-*.ndf
-
-# Ignore temporary or backup files
+# ===========================
+# Archivos temporales
+# ===========================
 *.log
 *.bak
 *.tmp
 
-# Ignore IDE-specific files
+# ===========================
+# IDEs y editores
+# ===========================
 .vscode/
 .idea/
 
-# Ignore exported data or diagrams (if applicable)
+# ===========================
+# Datos procesados (outputs)
+# ===========================
+# Los outputs del pipeline no se versionan;
+# se regeneran ejecutando los scripts SQL.
+data/processed/
+
+# ===========================
+# Exportaciones y diagramas
+# ===========================
 *.png
 *.pdf
